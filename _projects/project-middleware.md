@@ -17,9 +17,8 @@ stack:
 stack_logos:
   - kotlin
 repo_url: https://github.com/LeonardoBai12/ProjectMiddleware
-demo_url: https://projectmiddleware.fly.dev/
-demo_label: Live API
-docs_url: https://leonardos-organization-15.gitbook.io/projectmiddleware-public-docs
+demo_url: https://leonardos-organization-15.gitbook.io/projectmiddleware-public-docs
+demo_label: Documentation
 ---
 
 Project Middleware is a backend API transformation service. You point it at any public API and define mapping rules (rename, nest, concatenate, exclude empty fields) — the service returns your custom shape. A `/preview` endpoint lets you test rules before persisting them as permanent mapped routes.

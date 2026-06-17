@@ -20,6 +20,7 @@ stack_logos:
 repo_url: https://github.com/LeonardoBai12/MiddlewarePlayground
 image: /assets/images/middleware-playground-icon.png
 image_alt: Middleware Playground app icon
+card_bg: "#0b0323"
 ---
 
 Middleware Playground is the mobile client for [Project Middleware](/projects/project-middleware/). It lets developers create API route mappings, configure headers and query parameters, preview transformations, and manage a history of mapped routes — all from a native Android or iOS app.

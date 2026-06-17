@@ -18,8 +18,9 @@ stack_logos:
 repo_url: https://github.com/LeonardoBai12/AstorMemory-CMP
 demo_url: https://play.google.com/store/apps/details?id=io.lb.astormemory.app
 demo_label: Google Play
-image: /assets/images/narcisus.jpeg
-image_alt: AstorMemory brand image
+image: /assets/images/astor-memory-icon.png
+image_alt: AstorMemory app icon
+card_bg: "#200367"
 ---
 
 AstorMemory is a classic memory matching game where players flip cards to reveal and match fantasy creatures called "Astors". The project demonstrates modern Kotlin Multiplatform development with shared game logic across Android and iOS.

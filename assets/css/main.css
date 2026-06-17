@@ -350,6 +350,47 @@ code {
   max-width: 600px;
 }
 
+/* ── Education ──────────────────────────────────────────────── */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.education-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  transition: border-color var(--transition);
+}
+.education-card:hover { border-color: var(--accent); }
+.education-degree {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+.education-field {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+  line-height: 1.35;
+}
+.education-institution {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+.education-period {
+  font-family: var(--font-mono);
+  font-size: 0.775rem;
+  color: var(--text-dim);
+}
+
 /* ── Projects grid ──────────────────────────────────────────── */
 .projects-grid {
   display: grid;
@@ -372,7 +413,7 @@ code {
   box-shadow: 0 8px 32px rgba(124, 58, 237, 0.12);
 }
 .project-card-image {
-  height: 160px;
+  height: 180px;
   overflow: hidden;
   background: var(--bg-card-alt);
   display: flex;
@@ -382,8 +423,8 @@ code {
 .project-card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  padding: 1rem;
 }
 .project-card-image--placeholder {
   background: linear-gradient(135deg, var(--bg-card-alt), rgba(124,58,237,0.1));
@@ -478,6 +519,27 @@ code {
 .project-content p { margin-bottom: 1rem; }
 .project-content ul, .project-content ol { padding-left: 1.5rem; margin-bottom: 1rem; list-style: revert; }
 .project-content a { color: var(--accent); }
+.project-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+.project-content th,
+.project-content td {
+  text-align: left;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--border);
+}
+.project-content th {
+  background: var(--bg-card-alt);
+  color: var(--text);
+  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+.project-content td { color: var(--text-muted); }
+.project-content tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
 
 /* ── Knowledge Portfolio card ───────────────────────────────── */
 .knowledge-card {

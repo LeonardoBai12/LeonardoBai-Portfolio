@@ -6,7 +6,7 @@ layout: default
     <a href="{{ '/#projects' | relative_url }}" class="back-link">← Back to projects</a>
 
     {% if page.image %}
-    <div class="project-detail-hero">
+    <div class="project-detail-hero" {% if page.card_bg %}style="background: {{ page.card_bg }};"{% endif %}>
       <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}" class="project-detail-img">
     </div>
     {% endif %}

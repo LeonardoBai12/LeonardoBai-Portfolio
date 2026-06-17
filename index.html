@@ -9,10 +9,10 @@ title: Home
     <div class="hero-text">
       <span class="hero-greeting">Hi, I'm</span>
       <h1 class="hero-name">Leonardo Bai</h1>
-      <h2 class="hero-title">Senior Android Engineer</h2>
+      <h2 class="hero-title">Android Engineer</h2>
       <p class="hero-tagline">
         5+ years building production Android apps with Kotlin, Jetpack Compose, and
-        Clean Architecture. Currently looking for international roles in Europe.
+        Clean Architecture.
       </p>
       <div class="hero-ctas">
         <a href="https://github.com/LeonardoBai12"
@@ -21,6 +21,13 @@ title: Home
            rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
           GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/leonardo-bai-a4822917b/"
+           class="btn btn-outline"
+           target="_blank"
+           rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
         </a>
         <a href="https://leonardobbai.medium.com"
            class="btn btn-outline"
@@ -55,7 +62,7 @@ title: Home
     <div class="about-inner">
       <div class="about-body">
         <p>
-          I'm a Senior Android Engineer with over 5 years of professional experience designing and
+          I'm an Android Engineer with over 5 years of professional experience designing and
           shipping mobile applications used in production at scale. My work spans payments, security SDKs,
           and cross-platform mobile development.
         </p>
@@ -178,6 +185,44 @@ title: Home
   </div>
 </section>
 
+<!-- ══════════════════════════════════════ EDUCATION ═══ -->
+<section class="education section" id="education" aria-label="Education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="education-grid">
+
+      <div class="education-card">
+        <div class="education-degree">Postgraduate</div>
+        <div class="education-field">Software Architecture, Cybersecurity &amp; Data Engineering</div>
+        <div class="education-institution">Pontifical Catholic University (PUC) — Curitiba, PR</div>
+        <div class="education-period">2024 – 2025</div>
+      </div>
+
+      <div class="education-card">
+        <div class="education-degree">Postgraduate</div>
+        <div class="education-field">Mobile Application Development</div>
+        <div class="education-institution">Pontifical Catholic University (PUC) — Curitiba, PR</div>
+        <div class="education-period">2023 – 2025</div>
+      </div>
+
+      <div class="education-card">
+        <div class="education-degree">Bachelor's</div>
+        <div class="education-field">Software Engineering</div>
+        <div class="education-institution">UniCesumar — Maringá, PR</div>
+        <div class="education-period">2020 – 2024</div>
+      </div>
+
+      <div class="education-card">
+        <div class="education-degree">Associate's</div>
+        <div class="education-field">Systems Analysis and Development</div>
+        <div class="education-institution">UniCesumar — Maringá, PR</div>
+        <div class="education-period">2020 – 2023</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ══════════════════════════════════════ PROJECTS ════ -->
 <section class="projects section" id="projects" aria-label="Projects">
   <div class="container">
@@ -187,7 +232,7 @@ title: Home
       {% for project in sorted_projects %}
       <article class="project-card">
         {% if project.image %}
-        <div class="project-card-image">
+        <div class="project-card-image" {% if project.card_bg %}style="background: {{ project.card_bg }};"{% endif %}>
           <img src="{{ project.image | relative_url }}"
                alt="{{ project.image_alt | default: project.title }}"
                loading="lazy">
@@ -255,8 +300,8 @@ title: Home
       <div class="knowledge-card-body">
         <h3 class="knowledge-card-title">Advanced Kotlin &amp; Android Engineering</h3>
         <p class="knowledge-card-desc">
-          A 118-page study guide covering Coroutines &amp; Flow, Clean Architecture, testing strategies,
-          Gradle multi-module builds, garbage collection, Kotlin fundamentals, OOP, collections,
+          A deep-dive reference covering Kotlin fundamentals, Coroutines &amp; Flow, Clean Architecture,
+          testing strategies, Gradle multi-module builds, garbage collection, OOP, collections,
           memory management, and the Android lifecycle. Hosted on GitHub Pages.
         </p>
         <span class="knowledge-card-cta">Read the guide →</span>
@@ -316,7 +361,6 @@ title: Home
   <div class="container contact-inner">
     <h2 class="section-title">Get in Touch</h2>
     <p class="contact-desc">
-      I'm currently open to Senior/Lead Android Engineering roles in Europe (remote or on-site).
       Feel free to reach out — I'm happy to chat.
     </p>
     <div class="contact-links">
@@ -324,6 +368,7 @@ title: Home
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         leonardo.bai@outlook.com
       </a>
+      <a href="https://www.linkedin.com/in/leonardo-bai-a4822917b/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="https://github.com/LeonardoBai12" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href="https://leonardobbai.medium.com" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Medium</a>
       <a href="{{ '/assets/files/Leonardo_Bai_Resume_EN.pdf' | relative_url }}" class="btn btn-outline" target="_blank" rel="noopener noreferrer" download>Download Resume</a>
