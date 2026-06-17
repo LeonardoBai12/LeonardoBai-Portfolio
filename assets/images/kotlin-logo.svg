@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <defs>
+    <linearGradient id="kotlin-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#E44857"/>
+      <stop offset="46%"  stop-color="#C711E1"/>
+      <stop offset="100%" stop-color="#7F52FF"/>
+    </linearGradient>
+  </defs>
+  <!-- Kotlin logo: top-left triangle + bottom-left triangle + right chevron -->
+  <path fill="url(#kotlin-grad)"
+        d="M0 0 L30 0 L0 30 Z
+           M0 30 L0 60 L30 60 Z
+           M30 0 L60 30 L30 60 L0 30 L30 0 Z"/>
+</svg>

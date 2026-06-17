@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 75">
+  <!-- Flutter logo: upper blade (light blue) + lower-right (dark blue) + lower-left (medium blue) -->
+  <polygon points="38,0 0,38 13,51 64,0"      fill="#54C5F8"/>
+  <polygon points="13,51 38,76 64,51 38,26"   fill="#01579B"/>
+  <polygon points="13,51 25,63 38,51 25,38"   fill="#29B6F6"/>
+  <polygon points="38,51 25,63 38,76 51,63"   fill="#01579B" opacity="0.85"/>
+</svg>

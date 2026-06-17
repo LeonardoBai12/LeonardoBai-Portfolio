@@ -1,0 +1,45 @@
+title: Leonardo Bai
+tagline: Senior Android Engineer
+description: >-
+  Senior Android Engineer with 5+ years of experience building production apps
+  with Kotlin, Jetpack Compose, and Clean Architecture. Open to international
+  roles in Europe.
+baseurl: ""
+url: "https://leonardobai12.github.io"
+permalink: /:categories/:title/
+
+author:
+  name: Leonardo Bai
+  email: leonardo.bai@outlook.com
+  github: LeonardoBai12
+  medium: leonardobbai
+
+social:
+  github: https://github.com/LeonardoBai12
+  medium: https://leonardobbai.medium.com
+  email: mailto:leonardo.bai@outlook.com
+  resume: /assets/files/Leonardo_Bai_Resume_EN.pdf
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - scripts/
+  - vendor/
+  - node_modules/
+  - .github/
