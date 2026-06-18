@@ -272,7 +272,27 @@ title: Home
           <div class="badge-stack">
             {% for tech in project.stack %}
               {% assign tl = tech | downcase %}
-              {% if tl == 'kotlin' or tl == 'kmp' or tl contains 'compose' or tl contains 'jetpack' %}
+              {% if tl == 'google play' %}
+                <span class="badge badge-google-play">
+                  <img src="{{ '/assets/images/Google_"G"_logo.svg.png' | relative_url }}" class="badge-logo" alt="">
+                  {{ tech }}
+                </span>
+              {% elsif tl == 'firebase' %}
+                <span class="badge badge-firebase">
+                  <img src="{{ '/assets/images/firebase_icon-logo_brandlogos.net_tcvck-512x646.png' | relative_url }}" class="badge-logo" alt="">
+                  {{ tech }}
+                </span>
+              {% elsif tl == 'android' %}
+                <span class="badge badge-android">
+                  <img src="{{ '/assets/images/android-logo-powerful-mobile-apps-for-those-with-disabilities-3.png' | relative_url }}" class="badge-logo" alt="">
+                  {{ tech }}
+                </span>
+              {% elsif tl == 'ios' %}
+                <span class="badge badge-ios">
+                  <img src="{{ '/assets/images/apple-logo-silver-364lc2f68kt51nm3.jpg.png' | relative_url }}" class="badge-logo" alt="">
+                  {{ tech }}
+                </span>
+              {% elsif tl == 'kotlin' or tl == 'kmp' or tl contains 'compose' or tl contains 'jetpack' %}
                 <span class="badge badge-kotlin">
                   <img src="{{ '/assets/images/kotlin-official.svg' | relative_url }}" class="badge-logo" alt="">
                   {{ tech }}
@@ -280,6 +300,15 @@ title: Home
               {% elsif tl == 'flutter' or tl == 'dart' %}
                 <span class="badge badge-flutter">
                   <img src="{{ '/assets/images/images-7.png' | relative_url }}" class="badge-logo" alt="">
+                  {{ tech }}
+                </span>
+              {% elsif tl == 'swift' or tl == 'swiftui' %}
+                <span class="badge badge-swift">
+                  <img src="{{ '/assets/images/swift.svg' | relative_url }}" class="badge-logo" alt="">
+                  {{ tech }}
+                </span>
+              {% elsif tl == 'java' %}
+                <span class="badge badge-java">
                   {{ tech }}
                 </span>
               {% else %}
