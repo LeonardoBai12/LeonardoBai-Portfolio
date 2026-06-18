@@ -7,6 +7,10 @@ description: >-
   Built with Kotlin Multiplatform and Compose Multiplatform for Android and iOS.
   Available on Google Play.
 stack:
+  - Android
+  - iOS
+  - Google Play
+  - Firebase
   - KMP
   - Compose Multiplatform
   - SQLDelight

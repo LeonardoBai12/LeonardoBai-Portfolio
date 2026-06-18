@@ -8,6 +8,10 @@ description: >-
   cache and Ktor networking. Create, preview, and manage API route mappings from
   your phone.
 stack:
+  - Android
+  - iOS
+  - Google Play
+  - Firebase
   - KMP
   - Jetpack Compose
   - SwiftUI
