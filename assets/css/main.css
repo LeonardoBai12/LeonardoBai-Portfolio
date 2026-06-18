@@ -152,9 +152,10 @@ code {
   border-color: rgba(2, 86, 155, 0.35);
 }
 .badge-logo {
-  width: 13px;
-  height: 13px;
+  height: 14px;
+  width: auto;
   object-fit: contain;
+  display: block;
 }
 
 /* ── Header / Nav ───────────────────────────────────────────── */

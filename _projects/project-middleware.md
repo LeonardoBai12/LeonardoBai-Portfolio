@@ -19,6 +19,11 @@ stack_logos:
 repo_url: https://github.com/LeonardoBai12/ProjectMiddleware
 demo_url: https://leonardos-organization-15.gitbook.io/projectmiddleware-public-docs
 demo_label: Documentation
+image: /assets/images/middleware-icon.jpg
+image_alt: Project Middleware
+card_bg: "#0e191f"
+card_img_fit: cover
+card_img_scale: 2
 ---
 
 Project Middleware is a backend API transformation service. You point it at any public API and define mapping rules (rename, nest, concatenate, exclude empty fields) — the service returns your custom shape. A `/preview` endpoint lets you test rules before persisting them as permanent mapped routes.

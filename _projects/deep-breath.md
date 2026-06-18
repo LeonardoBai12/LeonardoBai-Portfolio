@@ -13,6 +13,9 @@ stack:
 stack_logos:
   - flutter
 repo_url: https://github.com/LeonardoBai12/DeepBreath
+image: /assets/images/images-7.png
+image_alt: Flutter
+card_bg: "#ffffff"
 ---
 
 DeepBreath is a Flutter application that shows real-time air quality data for any location. Users can browse countries, drill into specific locations, and inspect detailed air quality parameters. Device GPS is used for automatic location detection.

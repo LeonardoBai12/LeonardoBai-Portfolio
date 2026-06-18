@@ -78,16 +78,16 @@ title: Home
           Ktor for backend services, and occasionally Flutter.
         </p>
         <div class="about-skills">
-          <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-logo.svg' | relative_url }}" class="badge-logo" alt="">Kotlin</span>
-          <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-logo.svg' | relative_url }}" class="badge-logo" alt="">Jetpack Compose</span>
-          <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-logo.svg' | relative_url }}" class="badge-logo" alt="">KMP</span>
+          <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-official.svg' | relative_url }}" class="badge-logo" alt="">Kotlin</span>
+          <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-official.svg' | relative_url }}" class="badge-logo" alt="">Jetpack Compose</span>
+          <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-official.svg' | relative_url }}" class="badge-logo" alt="">KMP</span>
           <span class="badge">Clean Architecture</span>
           <span class="badge">MVVM</span>
           <span class="badge">Coroutines / Flow</span>
           <span class="badge">Ktor</span>
           <span class="badge">CI/CD</span>
           <span class="badge">Docker</span>
-          <span class="badge badge-flutter"><img src="{{ '/assets/images/flutter-logo.svg' | relative_url }}" class="badge-logo" alt="">Flutter</span>
+          <span class="badge badge-flutter"><img src="{{ '/assets/images/images-7.png' | relative_url }}" class="badge-logo" alt="">Flutter</span>
         </div>
       </div>
     </div>
@@ -114,8 +114,8 @@ title: Home
             standards across the team.
           </p>
           <div class="badge-stack">
-            <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-logo.svg' | relative_url }}" class="badge-logo" alt="">Kotlin</span>
-            <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-logo.svg' | relative_url }}" class="badge-logo" alt="">Jetpack Compose</span>
+            <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-official.svg' | relative_url }}" class="badge-logo" alt="">Kotlin</span>
+            <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-official.svg' | relative_url }}" class="badge-logo" alt="">Jetpack Compose</span>
             <span class="badge">MVVM</span>
             <span class="badge">Clean Architecture</span>
           </div>
@@ -134,7 +134,7 @@ title: Home
             test coverage and significantly improving reliability and maintainability.
           </p>
           <div class="badge-stack">
-            <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-logo.svg' | relative_url }}" class="badge-logo" alt="">Kotlin</span>
+            <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-official.svg' | relative_url }}" class="badge-logo" alt="">Kotlin</span>
             <span class="badge">Mobile Security SDK</span>
             <span class="badge">Testing</span>
           </div>
@@ -153,7 +153,7 @@ title: Home
             R8 rules for reverse-engineering protection of the SDK.
           </p>
           <div class="badge-stack">
-            <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-logo.svg' | relative_url }}" class="badge-logo" alt="">Kotlin</span>
+            <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-official.svg' | relative_url }}" class="badge-logo" alt="">Kotlin</span>
             <span class="badge">Payment SDK</span>
             <span class="badge">Docker</span>
             <span class="badge">CI/CD</span>
@@ -174,8 +174,8 @@ title: Home
             Flutter application.
           </p>
           <div class="badge-stack">
-            <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-logo.svg' | relative_url }}" class="badge-logo" alt="">Kotlin</span>
-            <span class="badge badge-flutter"><img src="{{ '/assets/images/flutter-logo.svg' | relative_url }}" class="badge-logo" alt="">Flutter</span>
+            <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-official.svg' | relative_url }}" class="badge-logo" alt="">Kotlin</span>
+            <span class="badge badge-flutter"><img src="{{ '/assets/images/images-7.png' | relative_url }}" class="badge-logo" alt="">Flutter</span>
           </div>
         </div>
       </li>
@@ -234,7 +234,8 @@ title: Home
         <div class="project-card-image" {% if project.card_bg %}style="background: {{ project.card_bg }};"{% endif %}>
           <img src="{{ project.image | relative_url }}"
                alt="{{ project.image_alt | default: project.title }}"
-               loading="lazy">
+               loading="lazy"
+               style="object-fit: {{ project.card_img_fit | default: 'contain' }}; padding: {% if project.card_img_fit == 'cover' %}0{% else %}1rem{% endif %}; transform: scale({{ project.card_img_scale | default: 1 }});">
         </div>
         {% else %}
         <div class="project-card-image project-card-image--placeholder">
@@ -251,12 +252,12 @@ title: Home
               {% assign tl = tech | downcase %}
               {% if tl == 'kotlin' or tl == 'kmp' or tl contains 'compose' or tl contains 'jetpack' %}
                 <span class="badge badge-kotlin">
-                  <img src="{{ '/assets/images/kotlin-logo.svg' | relative_url }}" class="badge-logo" alt="">
+                  <img src="{{ '/assets/images/kotlin-official.svg' | relative_url }}" class="badge-logo" alt="">
                   {{ tech }}
                 </span>
               {% elsif tl == 'flutter' or tl == 'dart' %}
                 <span class="badge badge-flutter">
-                  <img src="{{ '/assets/images/flutter-logo.svg' | relative_url }}" class="badge-logo" alt="">
+                  <img src="{{ '/assets/images/images-7.png' | relative_url }}" class="badge-logo" alt="">
                   {{ tech }}
                 </span>
               {% else %}
@@ -294,7 +295,7 @@ title: Home
        target="_blank"
        rel="noopener noreferrer">
       <div class="knowledge-card-icon" aria-hidden="true">
-        <img src="{{ '/assets/images/kotlin-logo.svg' | relative_url }}" alt="" width="40" height="40">
+        <img src="{{ '/assets/images/kotlin-official.svg' | relative_url }}" alt="" width="40" height="40">
       </div>
       <div class="knowledge-card-body">
         <h3 class="knowledge-card-title">Advanced Kotlin &amp; Android Engineering</h3>
