@@ -3,9 +3,8 @@ title: DeepBreath
 slug: deep-breath
 order: 4
 description: >-
-  Flutter app that measures air quality by location. Browse countries, select
-  a location, and view detailed air quality parameters. Uses device GPS for
-  automatic location detection.
+  Flutter app that shows real-time air quality data. Browse countries, select
+  a location, and view detailed air quality parameters.
 stack:
   - Flutter
   - Dart
@@ -18,13 +17,12 @@ image_alt: Flutter
 card_bg: "#ffffff"
 ---
 
-DeepBreath is a Flutter application that shows real-time air quality data for any location. Users can browse countries, drill into specific locations, and inspect detailed air quality parameters. Device GPS is used for automatic location detection.
+DeepBreath is a Flutter application that shows real-time air quality data for any location. Users can browse countries, drill into specific locations, and inspect detailed air quality parameters.
 
 ## Features
 
 - Browse countries and their available monitoring locations
 - View detailed air quality parameters per location
-- GPS-based automatic location detection
 - Clean, animated UI with hero transitions
 - Country flag display
 
@@ -36,7 +34,6 @@ DeepBreath is a Flutter application that shows real-time air quality data for an
 | Language | Dart |
 | State / DI / Routing | GetX 4.6 |
 | Networking | http 1.2 |
-| Location | geolocator 11.0 |
 | i18n | intl 0.19 |
 | Animations | hero_animation |
 | Flags | flag 7.0 |

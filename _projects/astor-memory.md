@@ -15,7 +15,7 @@ stack:
   - Compose Multiplatform
   - SQLDelight
   - Koin
-  - Ktor
+  - Ktor Client
   - Coroutines
 stack_logos:
   - kotlin

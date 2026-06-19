@@ -16,7 +16,7 @@ stack:
   - Jetpack Compose
   - SwiftUI
   - SQLDelight
-  - Ktor
+  - Ktor Client
   - Hilt
   - Coroutines
 stack_logos:

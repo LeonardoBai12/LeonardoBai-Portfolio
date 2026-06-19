@@ -9,7 +9,8 @@ description: >-
   testing before committing a route.
 stack:
   - Kotlin
-  - Ktor
+  - Ktor Server
+  - Ktor Client
   - MongoDB
   - Docker
   - Fly.io
