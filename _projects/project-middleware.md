@@ -18,7 +18,7 @@ stack:
 stack_logos:
   - kotlin
 repo_url: https://github.com/LeonardoBai12/ProjectMiddleware
-demo_url: https://leonardos-organization-15.gitbook.io/projectmiddleware-public-docs
+demo_url: https://leonardobai12.github.io/ProjectMiddleware/
 demo_label: Documentation
 image: /assets/images/middleware-icon.jpg
 image_alt: Project Middleware
