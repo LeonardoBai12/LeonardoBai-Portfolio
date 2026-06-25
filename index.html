@@ -70,15 +70,18 @@ title: Home
         </p>
         <p>
           I specialize in <strong>Clean Architecture</strong>, <strong>Jetpack Compose</strong>, and
-          <strong>SDK development</strong> — but what sets me apart is full-stack delivery ownership:
-          I've introduced testing cultures from scratch at two companies, built CI/CD pipelines with
-          Docker and GitHub Actions, and served as the architectural reference for my teams.
-          I treat testability as a design constraint, not an afterthought.
+          <strong>SDK development</strong>. At PicPay, I introduced a testing culture from scratch —
+          going from near-zero coverage to a practice the team actively maintained. At Caf, the team
+          built that culture together from day one as part of a full SDK redesign, and I was part of
+          establishing it. I've also built CI/CD pipelines with Docker and GitHub Actions — including
+          automated release pipelines and Dokka-generated docs deployed to GitHub Pages in my
+          open-source Ktor project — and served as the architectural reference for both teams.
         </p>
         <p>
           Beyond Android, I build with <strong>Kotlin Multiplatform</strong> (KMP/Compose Multiplatform)
           targeting both Android and iOS, write <strong>Swift</strong> and <strong>SwiftUI</strong> for
-          native iOS work, use <strong>Ktor</strong> for backend services, and publish to both Google Play
+          native iOS work, use <strong>Ktor</strong> for backend services, and integrate
+          <strong>C++ via JNI</strong> for performance-critical native components. I publish to Google Play.
           Fluent in English — actively looking for remote international opportunities
           where engineering quality and delivery reliability are first-class concerns.
         </p>
@@ -155,10 +158,11 @@ title: Home
           <p class="experience-desc">
             Mobile security SDK team with development in Kotlin and Swift. Contributed to the full
             redesign of the FaceLiveness SDK from scratch — new modular architecture with 95% test
-            coverage and significant gains in performance and scalability. Implemented reverse proxy
-            integration for both Android and iOS SDKs. Developed analytics with runtime metric
-            reporting and remote configuration via Firestore. Managed SDK flavors for Protobuf
-            variants (Lite and standard).
+            coverage built collaboratively with the team. Engineered reverse-proxy integration for
+            both Android and iOS under urgent delivery pressure from a high-value enterprise client,
+            stepping outside the Android domain to own the solution end-to-end. Developed runtime
+            metric reporting and remote configuration via Firestore. Managed Protobuf SDK flavors
+            (Lite and standard).
           </p>
           <div class="badge-stack">
             <span class="badge badge-android"><img src="{{ '/assets/images/android-logo-powerful-mobile-apps-for-those-with-disabilities-3.png' | relative_url }}" class="badge-logo" alt="">Android</span>
@@ -183,16 +187,18 @@ title: Home
           <h3 class="experience-role">Android Engineer</h3>
           <span class="experience-company">Invillia</span>
           <p class="experience-desc">
-            Android payment SDK and apps for card terminals, built with Kotlin and Java. Implemented
-            R8 for reverse engineering protection. Built a CI pipeline for instrumented tests using
-            Docker Compose and Gradle. Automated code documentation with Dokka via GitHub Actions.
-            Managed PagBank payment SDK flavors across multiple integration contexts.
+            Android payment SDK and apps for card terminals, built with Kotlin, Java, and C++ via
+            JNI for performance-critical native components. Implemented R8 for reverse engineering
+            protection. Built a CI pipeline for instrumented tests using Docker Compose and GitHub
+            Actions. Automated API documentation with Dokka on every release. Managed PagBank
+            payment SDK flavors across multiple integration contexts.
           </p>
           <div class="badge-stack">
             <span class="badge badge-android"><img src="{{ '/assets/images/android-logo-powerful-mobile-apps-for-those-with-disabilities-3.png' | relative_url }}" class="badge-logo" alt="">Android</span>
             <span class="badge badge-kotlin"><img src="{{ '/assets/images/kotlin-official.svg' | relative_url }}" class="badge-logo" alt="">Kotlin</span>
             <span class="badge badge-java"><img src="{{ '/assets/images/p-80-java.png.webp' | relative_url }}" class="badge-logo" alt="">Java</span>
             <span class="badge badge-firebase"><img src="{{ '/assets/images/firebase_icon-logo_brandlogos.net_tcvck-512x646.png' | relative_url }}" class="badge-logo" alt="">Firebase</span>
+            <span class="badge">C++ / JNI</span>
             <span class="badge">MVVM</span>
             <span class="badge">Clean Architecture</span>
             <span class="badge">SOLID</span>
